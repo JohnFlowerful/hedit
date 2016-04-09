@@ -41,6 +41,11 @@
 
 _emptyfn = function()end
 
+colors = {
+    yellow = {255, 255, 128, 255},
+    cyan = {27, 224, 224, 255}
+}
+
 -- Debug utility
 Debug = setmetatable({}, {
         __index = function(t, k)
@@ -121,15 +126,8 @@ function isValidVehicleModel ( model )
         return false
     end
 
-    if model < 400 or model > 611 then
-        return false
-    end
-    
-    return true
+    return (model >= 400) and (model <= 611)
 end
-
-
-
 
 
 function isVehicleATrailer ( model )

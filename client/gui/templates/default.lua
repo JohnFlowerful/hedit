@@ -1,5 +1,7 @@
 template = {}
 
+local yellow = colors.yellow
+
 -- This handles the main window template
 template.window = {
     type = "window",
@@ -44,18 +46,11 @@ template.window = {
 }
 
 template.menubar = {
-    {
-        title = "handling",
-        "reset",
-        "save",
-        "upload",
-        "download"
-    },
+    hovercolor = colors.cyan,
     {
         title = "tools",
         "import",
-        "get",
-        "share"
+        "reset"
     },
     {
         title = "extra",
@@ -65,6 +60,7 @@ template.menubar = {
 }
 
 template.views = {
+    hovercolor = yellow,
     { title = "engine", content = "handlingconfig" },
     { title = "body", content = "handlingconfig" },
     { title = "wheels", content = "handlingconfig" },
@@ -86,73 +82,73 @@ template.viewcontents = {
                     type = "label",
                     pos = { 72, 83 },
                     size = { 180, 20 },
-                    hovercolor = { 255, 255, 255, 128 }
+                    hovercolor = yellow
                 },
                 {
                     type = "label",
                     pos = { 72, 108 },
                     size = { 180, 20 },
-                    hovercolor = { 255, 255, 255, 128 }
+                    hovercolor = yellow
                 },
                 {
                     type = "label",
                     pos = { 72, 133 },
                     size = { 180, 20 },
-                    hovercolor = { 255, 255, 255, 128 }
+                    hovercolor = yellow
                 },
                 {
                     type = "label",
                     pos = { 72, 158 },
                     size = { 180, 20 },
-                    hovercolor = { 255, 255, 255, 128 }
+                    hovercolor = yellow
                 },
                 {
                     type = "label",
                     pos = { 72, 183 },
                     size = { 180, 20 },
-                    hovercolor = { 255, 255, 255, 128 }
+                    hovercolor = yellow
                 },
                 {
                     type = "label",
                     pos = { 72, 208 },
                     size = { 180, 20 },
-                    hovercolor = { 255, 255, 255, 128 }
+                    hovercolor = yellow
                 },
                 {
                     type = "label",
                     pos = { 72, 233 },
                     size = { 180, 20 },
-                    hovercolor = { 255, 255, 255, 128 }
+                    hovercolor = yellow
                 },
                 {
                     type = "label",
                     pos = { 72, 258 },
                     size = { 180, 20 },
-                    hovercolor = { 255, 255, 255, 128 }
+                    hovercolor = yellow
                 },
                 {
                     type = "label",
                     pos = { 72, 283 },
                     size = { 180, 20 },
-                    hovercolor = { 255, 255, 255, 128 }
+                    hovercolor = yellow
                 },
                 {
                     type = "label",
                     pos = { 72, 308 },
                     size = { 180, 20 },
-                    hovercolor = { 255, 255, 255, 128 }
+                    hovercolor = yellow
                 },
                 {
                     type = "label",
                     pos = { 72, 333 },
                     size = { 180, 20 },
-                    hovercolor = { 255, 255, 255, 128 }
+                    hovercolor = yellow
                 },
                 {
                     type = "label",
                     pos = { 72, 358 },
                     size = { 180, 20 },
-                    hovercolor = { 255, 255, 255, 128 }
+                    hovercolor = yellow
                 }
             },
             buttons = { -- Do not need a type!
@@ -219,25 +215,25 @@ template.viewcontents = {
                         type = "checkbox",
                         pos = { 72, 77 },
                         size = { 135, 15 },
-                        hovercolor = { 255, 255, 255, 128 }
+                        hovercolor = yellow
                     },
                     ["2"] = {
                         type = "checkbox",
                         pos = { 72, 92 },
                         size = { 135, 15 },
-                        hovercolor = { 255, 255, 255, 128 }
+                        hovercolor = yellow
                     },
                     ["4"] = {
                         type = "checkbox",
                         pos = { 212, 77 },
                         size = { 135, 15 },
-                        hovercolor = { 255, 255, 255, 128 }
+                        hovercolor = yellow
                     },
                     ["8"] = {
                         type = "checkbox",
                         pos = { 212, 92 },
                         size = { 135, 15 },
-                        hovercolor = { 255, 255, 255, 128 }
+                        hovercolor = yellow
                     }
                 },
                 {
@@ -245,25 +241,25 @@ template.viewcontents = {
                         type = "checkbox",
                         pos = { 72, 107 },
                         size = { 135, 15 },
-                        hovercolor = { 255, 255, 255, 128 }
+                        hovercolor = yellow
                     },
                     ["2"] = {
                         type = "checkbox",
                         pos = { 72, 122 },
                         size = { 135, 15 },
-                        hovercolor = { 255, 255, 255, 128 }
+                        hovercolor = yellow
                     },
                     ["4"] = {
                         type = "checkbox",
                         pos = { 212, 107 },
                         size = { 135, 15 },
-                        hovercolor = { 255, 255, 255, 128 }
+                        hovercolor = yellow
                     },
                     ["8"] = {
                         type = "checkbox",
                         pos = { 212, 122 },
                         size = { 135, 15 },
-                        hovercolor = { 255, 255, 255, 128 }
+                        hovercolor = yellow
                     }
                 },
                 {
@@ -271,25 +267,25 @@ template.viewcontents = {
                         type = "checkbox",
                         pos = { 72, 137 },
                         size = { 135, 15 },
-                        hovercolor = { 255, 255, 255, 128 }
+                        hovercolor = yellow
                     },
                     ["2"] = {
                         type = "checkbox",
                         pos = { 72, 152 },
                         size = { 135, 15 },
-                        hovercolor = { 255, 255, 255, 128 }
+                        hovercolor = yellow
                     },
                     ["4"] = {
                         type = "checkbox",
                         pos = { 212, 137 },
                         size = { 135, 15 },
-                        hovercolor = { 255, 255, 255, 128 }
+                        hovercolor = yellow
                     },
                     ["8"] = {
                         type = "checkbox",
                         pos = { 212, 152 },
                         size = { 135, 15 },
-                        hovercolor = { 255, 255, 255, 128 }
+                        hovercolor = yellow
                     }
                 },
                 {
@@ -297,25 +293,25 @@ template.viewcontents = {
                         type = "checkbox",
                         pos = { 72, 167 },
                         size = { 135, 15 },
-                        hovercolor = { 255, 255, 255, 128 }
+                        hovercolor = yellow
                     },
                     ["2"] = {
                         type = "checkbox",
                         pos = { 72, 182 },
                         size = { 135, 15 },
-                        hovercolor = { 255, 255, 255, 128 }
+                        hovercolor = yellow
                     },
                     ["4"] = {
                         type = "checkbox",
                         pos = { 212, 167 },
                         size = { 135, 15 },
-                        hovercolor = { 255, 255, 255, 128 }
+                        hovercolor = yellow
                     },
                     ["8"] = {
                         type = "checkbox",
                         pos = { 212, 182 },
                         size = { 135, 15 },
-                        hovercolor = { 255, 255, 255, 128 }
+                        hovercolor = yellow
                     }
                 },
                 {
@@ -323,25 +319,25 @@ template.viewcontents = {
                         type = "checkbox",
                         pos = { 72, 197 },
                         size = { 135, 15 },
-                        hovercolor = { 255, 255, 255, 128 }
+                        hovercolor = yellow
                     },
                     ["2"] = {
                         type = "checkbox",
                         pos = { 72, 212 },
                         size = { 135, 15 },
-                        hovercolor = { 255, 255, 255, 128 }
+                        hovercolor = yellow
                     },
                     ["4"] = {
                         type = "checkbox",
                         pos = { 212, 197 },
                         size = { 135, 15 },
-                        hovercolor = { 255, 255, 255, 128 }
+                        hovercolor = yellow
                     },
                     ["8"] = {
                         type = "checkbox",
                         pos = { 212, 212 },
                         size = { 135, 15 },
-                        hovercolor = { 255, 255, 255, 128 }
+                        hovercolor = yellow
                     }
                 },
                 {
@@ -349,25 +345,25 @@ template.viewcontents = {
                         type = "checkbox",
                         pos = { 72, 227 },
                         size = { 135, 15 },
-                        hovercolor = { 255, 255, 255, 128 }
+                        hovercolor = yellow
                     },
                     ["2"] = {
                         type = "checkbox",
                         pos = { 72, 242 },
                         size = { 135, 15 },
-                        hovercolor = { 255, 255, 255, 128 }
+                        hovercolor = yellow
                     },
                     ["4"] = {
                         type = "checkbox",
                         pos = { 212, 227 },
                         size = { 135, 15 },
-                        hovercolor = { 255, 255, 255, 128 }
+                        hovercolor = yellow
                     },
                     ["8"] = {
                         type = "checkbox",
                         pos = { 212, 242 },
                         size = { 135, 15 },
-                        hovercolor = { 255, 255, 255, 128 }
+                        hovercolor = yellow
                     }
                 },
                 {
@@ -375,25 +371,25 @@ template.viewcontents = {
                         type = "checkbox",
                         pos = { 72, 257 },
                         size = { 135, 15 },
-                        hovercolor = { 255, 255, 255, 128 }
+                        hovercolor = yellow
                     },
                     ["2"] = {
                         type = "checkbox",
                         pos = { 72, 272 },
                         size = { 135, 15 },
-                        hovercolor = { 255, 255, 255, 128 }
+                        hovercolor = yellow
                     },
                     ["4"] = {
                         type = "checkbox",
                         pos = { 212, 257 },
                         size = { 135, 15 },
-                        hovercolor = { 255, 255, 255, 128 }
+                        hovercolor = yellow
                     },
                     ["8"] = {
                         type = "checkbox",
                         pos = { 212, 272 },
                         size = { 135, 15 },
-                        hovercolor = { 255, 255, 255, 128 }
+                        hovercolor = yellow
                     }
                 },
                 {
@@ -401,25 +397,25 @@ template.viewcontents = {
                         type = "checkbox",
                         pos = { 72, 287 },
                         size = { 135, 15 },
-                        hovercolor = { 255, 255, 255, 128 }
+                        hovercolor = yellow
                     },
                     ["2"] = {
                         type = "checkbox",
                         pos = { 72, 302 },
                         size = { 135, 15 },
-                        hovercolor = { 255, 255, 255, 128 }
+                        hovercolor = yellow
                     },
                     ["4"] = {
                         type = "checkbox",
                         pos = { 212, 287 },
                         size = { 135, 15 },
-                        hovercolor = { 255, 255, 255, 128 }
+                        hovercolor = yellow
                     },
                     ["8"] = {
                         type = "checkbox",
                         pos = { 212, 302 },
                         size = { 135, 15 },
-                        hovercolor = { 255, 255, 255, 128 }
+                        hovercolor = yellow
                     }
                 }
             },
