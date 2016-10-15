@@ -1,5 +1,5 @@
 setting = {
-    usedKey = "b",
+    usedKey = "F5",
     usedCommand = "hedit",
     language = "english",
     template = "default",
